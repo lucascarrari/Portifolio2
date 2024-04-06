@@ -4,10 +4,15 @@
     <meta charset="UTF-8"> <!-- Definindo o conjunto de caracteres para UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração de viewport para dispositivos móveis -->
     <title>Portifolio</title> <!-- Título da página -->
-    <link rel="stylesheet" href="style.css"> <!-- Importando o arquivo de estilo externo -->
+    <link rel="stylesheet" href="./styles/style.css"> <!-- Importando o arquivo de estilo externo -->
 </head>
 <body>
-    <header id="header"></header> <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="Index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
+        </nav>
+    </header> <!-- Cabeçalho -->
     <main class="apresentacao">  
         
         <section class="apresentacao__conteudo">
@@ -15,15 +20,32 @@
             <p class="apresentacao__conteudo__texto">Olá! Sou Lucas Carrari, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p> <!-- Parágrafo introdutório -->
             
                 <div class="apresentacao__links">   
-                    <a class="apresentacao__links__link" href="https://Instagram.com/lucascarrari">Instagram</a> <!-- Link para o Instagram -->
-                    <a class="apresentacao__links__link" href="https://GitHub.com/lucascarrari">GitHub</a> <!-- Link para o GitHub -->
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                        
+                    <!-- Link para o GitHub -->
+                        <a class="apresentacao__links__link" href="https://GitHub.com/lucascarrari">
+                            <img src="./assets/Logo Github.png" alt="Logo GitHub">GitHub
+                        </a> 
+                        
+                        <!-- Link para o Linkedin -->
+                        <a class="apresentacao__links__link" href="https://www.linkedin.com/in/lucas-carrari/">
+                            <img src="./assets/Logo linkedin.png" alt="Logo Linkedin">Linkedin
+                        </a>   
+                        
+                        <!-- Link para o Instagram -->
+                        <a class="apresentacao__links__link" href="https://Instagram.com/lucascarrari">
+                            <img src="./assets/Logo Instagram.png" alt="Logo Intagram">Instagram
+                        </a> 
+                    
                 </div>
         
         </section>  
            
-        <img src="Imagem.png" alt="Foto de Lucas Carrari"/> <!-- Imagem de Lucas Carrari -->
+        <img class="foto" src="./assets/Imagem.png" alt="Foto de Lucas Carrari"/> <!-- Imagem de Lucas Carrari -->
         
     </main>  
-    <footer>    </footer> <!-- Rodapé -->
+    <footer>
+        <p class="rodape">Desenvolvido por Lucas Carrari</p>
+    </footer> <!-- Rodapé -->
 </body>
 </html>

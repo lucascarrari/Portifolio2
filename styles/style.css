@@ -7,9 +7,26 @@
     padding: 0;
 }
 
+.cabecalho{ 
+   padding: 2% 0% 0% 15%;   
+  
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+}
+
 /* Estilo para o corpo da página */
 body {
-    height: 100vh; /* Define a altura do corpo da página como 100% da altura da viewport */
+    /* height: 100vh; Define a altura do corpo da página como 100% da altura da viewport */
     box-sizing: border-box;
     background-color: black; /* Define a cor de fundo como preto */
     color: #F6F6F6; /* Define a cor do texto como um tom de cinza claro */
@@ -21,7 +38,7 @@ body {
 }
 
 .apresentacao{
-    margin: 10% 15%;
+    padding: 5% 15%;
     display: flex; 
     align-items: center;
     justify-content: space-between;
@@ -44,20 +61,53 @@ body {
 
 .apresentacao__links{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .apresentacao__links__link{
-    background-color: #22D4FD;
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: black;
-    
+    color: #F6F6F6; 
 
+}
+
+.apresentacao__links__link:hover{
+    background-color:#272727 ;
+}
+
+.rodape{
+   padding: 24px; 
+   color: black;
+   background-color: #22D4FD; 
+   text-align: center;
+   font-size: 24px; 
+   font-weight: 400;
+   font-family: "Montserrat", sans-serif; 
+}
+
+
+.foto {
+    display: flex; /* Usa flexbox para organizar a imagem */
+    width: 100%; /* Define a largura da imagem como 100% do tamanho do contêiner pai */
+    height: auto; /* Define a altura da imagem como automática, para manter a proporção */
+    max-width: 600px; /* Define a largura máxima da imagem */
 }
