@@ -26,7 +26,7 @@
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -63,7 +63,7 @@
  
  .cabecalho__menu__link{
      font-family: var(--fonte-secundaria);
-     font-size: 24px;
+     font-size: 1.5rem;
      font-weight: 600;
      color: var(--cor-terciaria);
      text-decoration: none;
@@ -109,20 +109,21 @@ body {
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .apresentacao__conteudo__titulo{
-    font-size: 36px; 
+    font-size: 2.25rem; 
     font-family: var(--fonte-terciaria)
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria)
 }
 
@@ -136,21 +137,21 @@ body {
 
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-terciaria);
     font-weight: 600;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     padding: 21.5px 0;
@@ -165,20 +166,42 @@ body {
     font-weight: 600;
 }
 
+
+.foto {
+    display: flex; /* Usa flexbox para organizar a imagem */
+    width: 50%; /* Define a largura da imagem como 50% do tamanho do contêiner pai */
+    height: auto; /* Define a altura da imagem como automática, para manter a proporção */
+    max-width: 600px; /* Define a largura máxima da imagem */
+}
+
 .rodape{
    padding: 24px; 
    color: var(--cor-primaria);
    background-color: var(--cor-terciaria); 
    text-align: center;
-   font-size: 24px; 
+   font-size: 1.5rem; 
    font-weight: 400;
    font-family: var(--fonte-secundaria); 
 }
 
+@media (max-width:1500px){
+    .cabecalho{
+        padding: 10%;  
+    }
 
-.foto {
-    display: flex; /* Usa flexbox para organizar a imagem */
-    width: 100%; /* Define a largura da imagem como 100% do tamanho do contêiner pai */
-    height: auto; /* Define a altura da imagem como automática, para manter a proporção */
-    max-width: 600px; /* Define a largura máxima da imagem */
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
+
+
